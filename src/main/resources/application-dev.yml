@@ -1,0 +1,31 @@
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    username: root
+    password: hexiaonan
+    url: jdbc:mysql://127.0.0.1:3306/scan?characterEncoding=utf-8&useSSL=false&serverTimezone=GMT%2B8
+
+project:
+  scanUrl: http://xiaonan.mynatapp.cc/scancode/wechat/authorize?returnUrl=http://xiaonan.mynatapp.cc/scancode/webchat/scan
+  registerUrl: http://xiaonan.mynatapp.cc/scancode/wechat/authorize?returnUrl=http://xiaonan.mynatapp.cc/scancode/register/index
+  bossverifyUrl: http://xiaonan.mynatapp.cc/scancode/wechat/authorize?returnUrl=http://xiaonan.mynatapp.cc/scancode/boss/verifylist
+
+wechat:
+
+
+server:
+  servlet:
+    context-path: /scancode
+logging:
+  path: /logs/scancode/
+  file:
+    max-size: 10MB
+
+
+
+
+
+
+
+
+
